@@ -1,1 +1,14 @@
-<h1>Home Page</h1>
+<h1>Contact List v4</h1>
+<% @contacts.each do |contact| %>
+  <div class="contact-block">
+    <p><strong>Name:</strong> <%= contact.firstname %> <%= contact.lastname %></p>
+    <p><strong>Email:</strong> <%= contact.email %></p>
+    <p><strong>Phone Numbers: </strong></p>
+    <ul>
+      <% contact.phone_numbers.each do |number| %>
+        <li><%= number.phone_number %></li>
+      <% end %>
+    </ul>
+    <hr/>
+  </div>
+<% end %>

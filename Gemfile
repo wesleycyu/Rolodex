@@ -10,6 +10,8 @@ gem 'sinatra-activerecord'
 
 gem 'puma'
 gem 'tux'
+gem 'json'
+gem 'byebug'
 
 group :development, :test do
   gem 'pry'
