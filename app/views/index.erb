@@ -1,14 +1,42 @@
-<h1>Contact List v4</h1>
-<% @contacts.each do |contact| %>
-  <div class="contact-block">
-    <p><strong>Name:</strong> <%= contact.firstname %> <%= contact.lastname %></p>
-    <p><strong>Email:</strong> <%= contact.email %></p>
-    <p><strong>Phone Numbers: </strong></p>
-    <ul>
-      <% contact.phone_numbers.each do |number| %>
-        <li><%= number.phone_number %></li>
-      <% end %>
-    </ul>
-    <hr/>
+
+<div id="app-screen">
+  <div id="contact-list">
+    <div id="contact-header">
+      <h1>Contact List v4</h1>
+      <input type="text" name="search" id="search_field" placeholder="Search">
+    </div>
+    <div id="results_block">
+    </div>
   </div>
-<% end %>
+
+  <div id="contact-focus">
+
+    <input type="text" name="firstname" id="firstname" placeholder="First Name">
+    <input type="text" name="lastname" id="lastname" placeholder="Last Name">
+    <input type="text" name="email" id="email" placeholder="Email">
+    <button id="add_contact">Add a Contact</button>
+
+
+    <div id="contact-photo">
+    </div>
+    <div id="contact-fullname">
+    </div>
+    <div id="contact-email">
+    </div>
+
+    <div class="hidden" id="edit-form">
+      <label for="firstname">First Name:</label>
+      <input type="text" name="firstname" id="edit-firstname" placeholder="First Name"><br>
+       <label for="lastname">Last Name:</label>
+      <input type="text" name="lastname" id="edit-lastname" placeholder="Last Name"><br>
+       <label for="email">Email:</label>
+      <input type="text" name="email" id="edit-email" placeholder="Email">
+      <button id="contact-edit-done">Done</button>
+    </div>
+
+    <button id='contact-edit'>Edit</button>
+
+
+  </div>
+</div>
+

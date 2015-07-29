@@ -1,0 +1,93 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+}
+
+#app-screen {
+  height: 100%;
+  width: 100%;
+}
+
+#contact-header {
+  border-bottom: 1px solid #DADFE1;
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+#contact-list {
+  width: 25%;
+  height: 100%;
+  float: left;
+  overflow: scroll;
+}
+
+.contact_block {
+  border-bottom: 1px solid #DADFE1;
+  border-top: 1px solid #DADFE1;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+}
+
+.contact_block:hover {
+  background-color: black;
+  color: white;
+}
+
+#search_field {
+  text-align: center;
+  font-size: 1.2em;
+  margin-left: 15px;
+  float: none;
+  width: 85%;
+}
+
+#contact-focus {
+  width: 75%;
+  height: 100%;
+  text-align: center;
+  float: right;
+  box-shadow: 6px 0px 5px -5px #999, -6px 0px 5px -5px #999;
+}
+
+#contact-edit {
+  right: 0%;
+  bottom: 5%;
+  background-color: black;
+  color: white;
+  position: absolute;
+  outline: none;
+  border: none;
+  font-size: 2em;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 40px;
+  padding-left: 40px;
+}
+
+#contact-edit-done {
+  right: 0%;
+  bottom: 5%;
+  background-color: black;
+  color: white;
+  position: absolute;
+  outline: none;
+  border: none;
+  font-size: 2em;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 40px;
+  padding-left: 40px;
+}
+
+.hidden {
+  display: none;
+}
+
+.selected {
+  background-color: black;
+  color: white;
+}
+
