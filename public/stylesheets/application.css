@@ -82,6 +82,20 @@ html, body {
   padding-left: 40px;
 }
 
+#contact-delete {
+  right: 0%;
+  bottom: 0%;
+  color: white;
+  position: absolute;
+  outline: none;
+  border: none;
+  font-size: 1em;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 40px;
+  padding-left: 40px;
+}
+
 .hidden {
   display: none;
 }

@@ -24,17 +24,14 @@ get '/contact/:id' do
 end
 
 # Update Contact
-put '/api/:id' do
-  contact = Contact.find(params[:id])
-    contact.update(
-    name:   params[:name],
-    email:  params[:email],
-    phone: params[:phone]
-    )
+put '/contact/:id' do
+  @contact = Contact.find(params[:id])
+  @contact.update({firstname: params[:firstname], lastname: params[:lastname], email: params[:email]})
+  @contact.to_json
 end
 
 # Delete Contact
-delete '/api/:id' do
+delete '/contact/:id' do
   contact = Contact.find(params[:id])
   contact.destroy
 end
